@@ -1,0 +1,159 @@
+/* Global reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Body styling with retro colors and modern fonts */
+body {
+    font-family: 'Poppins', sans-serif; /* More modern font */
+    background-color: #faf3e0; /* Light retro background */
+    color: #333;
+    padding: 20px;
+}
+
+/* Navigation bar with retro-modern design */
+nav {
+    background-color: #ffcc70; /* Warm, retro tone */
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61; /* Retro hover effect */
+}
+
+/* Form styling */
+h1 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 220px;
+    padding: 8px;
+    border: 2px solid #ffcc70;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff4b3a;
+    transform: scale(1.05); /* Slight hover effect */
+    transform-origin: center; /* Ensures scaling happens from the center */
+}
+
+/* Report section styling */
+h2 {
+    margin-top: 30px;
+    color: #555;
+    font-weight: bold;
+}
+
+#report, #result {
+    padding: 15px;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+#result {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow: auto; /* Prevents content overflow */
+}
+
+#result img {
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
+    transition: transform 0.3s ease;
+}
+
+#result img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    transform-origin: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #result {
+        width: 100%;
+        height: auto;
+    }
+}
